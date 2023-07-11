@@ -1,0 +1,34 @@
+body {
+ background: lightcoral;
+}
+/* 
+  - Name the element you are targeting
+  
+  - Name it by the class but you must start it with a period ex: (.paragraph {})
+  
+  - Name it by the ID it must start with a # ex: (#para2{})
+  
+  - You can use selectors  ex (ol > li)
+  */
+p {
+  background: lightblue;
+  color: coral;
+}
+.paragraph {
+  color: purple;
+  font-size: 24px;
+}
+
+#para1 {
+  color: blue !important;
+}
+
+div > img {
+  border-radius: 50%;
+  border: 5px solid purple;
+}
+
+div > img:hover {
+  border: 10px solid green;
+  cursor: pointer;
+}
