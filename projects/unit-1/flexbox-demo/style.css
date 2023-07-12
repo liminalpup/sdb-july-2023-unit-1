@@ -1,0 +1,20 @@
+
+
+@media screen and (max-width: 700px) {
+    .container {
+        display: flex;
+        outline: 5px solid brown;
+        justify-content: center;
+    }
+    
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items:center;
+    background: red;
+    font-size: 45px;
+    flex-direction:column;
+}

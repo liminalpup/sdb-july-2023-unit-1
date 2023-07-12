@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    outline: 5px solid brown;
+}
+
+#about {
+    flex: 2;
+}
+
+#logout {
+    flex: 3;
+}
+
+/* use flex command to make id'd div change ratio in nav bar */

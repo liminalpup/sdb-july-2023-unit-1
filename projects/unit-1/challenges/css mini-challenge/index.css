@@ -1,0 +1,43 @@
+/* 
+If you only have one element that you need to apply styling rules to use an ID
+
+If you have a group of elements that you need to apply styling to use a CLASS
+
+*/
+
+/* Header Section */
+/*! Adjust the font size to 50px and center the text of the H1 use an ID to select the header */
+
+/* Main Section */
+/* ! Adjust the margin top to the p-tags by using a class. Set the margin top to 15px */
+
+/* Section 1 */
+/* !Add a background color blue to the ul in section 1 use an ID to select it */
+/* Section 2 */
+
+/*! Add a background color red to the ul in section 2 use an ID to select it */
+
+/* ! Change the li's in this section to be other than normal bullet points */
+
+#minichallenge-header {
+  font-family: monospace;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+
+
+.body-text {
+  margin-top: 15px;
+}
+
+#things-i-learned-css {
+  list-style-type: upper-roman;
+  background-color: blue;
+}
+
+#things-i-learned-html {
+  list-style-type: lower-greek;
+  background-color: red;
+}

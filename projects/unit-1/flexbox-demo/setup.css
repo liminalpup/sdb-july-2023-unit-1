@@ -1,0 +1,24 @@
+.container > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+  }
+  
+  html,
+  body {
+    background-color: hotpink;
+    margin: 10px;
+  }
+  
+  .container > div:nth-child(1) {
+    background-color: lightblue;
+  }
+  
+  .container > div:nth-child(2) {
+    background-color: seagreen;
+  }
+  
+  .container > div:nth-child(3) {
+    background-color: mediumslateblue;
+  }
