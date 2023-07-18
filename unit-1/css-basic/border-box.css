@@ -1,0 +1,17 @@
+.content-box {
+    background: lightblue;
+    width: 500px;
+    height: 50px;
+}
+
+.spacer {
+    width: 500px;
+    height:50px;
+    background: gray;
+}
+
+.border-box {
+    background: lightgreen;
+    width: 500px;
+    height: 50px;
+}

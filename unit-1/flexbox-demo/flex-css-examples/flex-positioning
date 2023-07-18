@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    outline: 5px solid brown;
+    justify-content: space-between;
+}
+
+/* 
+
+default: flex-start
+flex-end
+center
+space-around
+space-between
+space-evenly
+
+*/

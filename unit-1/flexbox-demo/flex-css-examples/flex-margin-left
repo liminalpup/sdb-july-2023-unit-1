@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    outline: 5px solid brown;
+    justify-content: space-between;
+}
+
+#about {
+    /*margin-left: auto; */
+}
+
+#logout {
+    /* margin-left: auto; */
+}
