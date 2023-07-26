@@ -1,166 +1,124 @@
 /* 
 Types - Data Types
 - Strings
-- Numbers
-- Booleans
 */
+
+
 
 /* 
 STRINGS:
-- datatypes are used to represent text. 
-- You can use Double Quotes
-- You can use Single Quotes
-- You can use Backticks
+- Data types used to represent text, typically wrapped in single quotes, double quotes, or backticks.
 */
 
-let string1 = "double quotes";
+let stringOne = "double quotes";
 // prettier-ignore
-let string2 = 'single quotes';
 
-let string3 = `backtick quotes`;
+let stringTwo = 'single quotes';
 
-// STRING CONCATENATION
-/* 
-When you add two or more strings together they will become a single string.
-Strings will concatenate with any data type and will result in a string.
-*/
+let stringThree = `backtick quotes`;
+
+// Combining Strings
 
 let greeting = "Good Morning";
+
 let firstName = "Rob";
+//! Morning and Rob does not have a space when executed.
+console.log(greeting + firstName);
 
+//  Solution:
 console.log(greeting + " " + firstName);
-
-// Solution using backticks to allow for the space
 
 let fullGreeting = `${greeting} ${firstName}`;
 
-console.log("Full Greeting", fullGreeting);
+console.log(fullGreeting);
 
-// ! If you want know what type of variable you are using: use the TYPEOF
+// ! If you want to know what "TYPE" the variable is, you can use the keyword typeof
 
-console.log(typeof firstName);
+// console.log(typeof firstName);
 
-// To determine the size of the string you use the length method
-let animal = "horses";
-console.log("animal size", animal.length);
-// To reference a single letter in a string you can use square brackets.
-// ! Remember it is zero based
+let ship = "titanic";
+ship.toUpperCase();
 
-console.log("1st letter:", animal[0]);
+// To determine the size of the string, use the .length method.
 
-// ? If I wanted to grab the last letter of the animal what would that look like
-animal = "elephant";
-lastLetterNumber = animal.length;
-console.log("last letter", animal[lastLetterNumber - 1]);
+let animal = "horse";
+console.log(animal.length);
+// To access the first letter, use 0 instead of 1, as Javascript begins with 0
+console.log(animal[0]);
 
-// Removing White Space from a String using trim
+let textData = "           Hello              ";
 
-let textData = "             Hello           ";
-console.log("Trim Example:", textData.trim());
+console.log(textData.trim());
 
-// Add a new line in the console
+let newLineString = "I went to the store yesterday. \nI bought eggs and milk";
 
-let paragraphString = "I went to the store today. \nI bought eggs and milk.";
+console.log(newLineString);
 
-let linebreak = "\n";
+// ! NUMBERS
 
-let paragraphString2 =
-  "I went to the store today." + linebreak + "I bought eggs and milk.";
-console.log(paragraphString);
-
-// ! NUMBERS:
-
-let currentTemp = 78;
+let currentTemp = 38;
 
 console.log(typeof currentTemp);
 
-// ! Be Careful of mismatching Strings and Numbers
+let funkyNumber = 0.2 + 0.1;
+console.log(funkyNumber);
 
-let myAge = 43;
-let friendAge = "35";
+let add1 = 2 + 1;
+console.log(add1);
 
-console.log(myAge + friendAge); // Problem is it combines them treating them as strings
+let totalMoney = (1999 + 1599)/100
+console.log(totalMoney);
 
-//  You can convert a string to a number
-// parseInt, Number(), or a plus sign.
-// parseInt
-console.log(myAge + parseInt(friendAge));
-// Number
-console.log(myAge + Number(friendAge));
-// plus sign
-console.log(myAge + +friendAge);
+let myAge = "42"
+let friendAge = 34
+console.log(Number(myAge) + friendAge); // When myAge is in double quotations adds 42 + 34 together semantically, like 4234 because myAge is a "string". If one is quotes and one is not, add Number() to variable with a string to convert it to a number.
+// can also use parseInt(myAge) to parse the first value as a string and return the first integer.
+//Can also Add a (+) before the string variable.
+console.log(+myAge + friendAge);
 
-let fruit = "apple";
+let stringNumber = "23";
+let stringExample = "abcd";
 
-let snack = fruit;
-
-fruit = "orange";
-
-console.log(snack);
-
-// SLICE Method for String
-console.log("blueberry".slice(4, 9));
+console.log(stringExample / 2); // Comes back as NaN (not a number) because a string / 2 is not possible.
 
 // ! Number Operators
 /* 
-Adding numbers (+)
-Subtracting (-)
-Multiply (*)
-Divide (/)
+Adding Numbers, use (+)
+Subtracting Numbers use (-)
+Multiplying Numbers use (*)
+Dividing Numbers use (/)
 
-Exponents (**)
-Modulus(%) Provides you with the remainder
-
-
+Special ones:
+Exponents use (**)
 */
 
-//  3^3
-console.log(3 ** 3);
+//Examples:
 
-// 21 / 10  = remainder 1
-console.log(21 % 10);
+// Exponents
 
-// Even Number Example:
-console.log(32 % 2);
+console.log(3 ** 3); // indicates 3^3 which is 27.
 
-// Odd Number Example
-console.log(33 % 2);
+// Remainders
 
-// ! Shopping Cart Example
+console.log(21 % 10); // gives a remainder of 1.
+
+// ? How can I tell if a number is even?
+
+console.log("odd", 33 % 2); // results in remainder of 1, so it is odd.
+console.log("even", 32 % 2); // result is a remainder of 0 so it is even.
+
+// ? How do I take what I had before and add to it?
 
 let totalPrice = 0;
+let item1 = 5; //item 1 costs $5
+totalPrice = totalPrice + item1;
+console.log(totalPrice);
+let item2 = 10; //item 2 costs $10
 
-let price1 = 10;
-
-totalPrice = totalPrice + price1;
-
-let price2 = 15;
-
-totalPrice = totalPrice + price2;
-
-let price3 = 7;
-
-totalPrice += price3;
+totalPrice = totalPrice + item2; // adding item 2 to total price.
+// shorthand: totalPrice += item2
 console.log(totalPrice);
 
-// ! Funky Math
 
-let funkyTotal = 0.1 + 0.2;
-console.log(funkyTotal);
 
-console.log("Fixed 2 digits", funkyTotal.toFixed(2));
-let flooredNumber = 25.56;
-console.log("Floored Number:", Math.floor(flooredNumber));
 
-// ? How do I get 25.5 using Math.floor
-console.log("Floored Number 25.5:", Math.floor(flooredNumber * 10) / 10);
-
-console.log(2 ** 53 + 1);
-
-const result = BigInt(2) ** BigInt(53) + BigInt(1);
-console.log(result); // Output: 9007199254740993
-
-//! Boolean
-
-let isOver21 = true;
-let isLoggedIn = false;

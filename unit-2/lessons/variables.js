@@ -1,99 +1,57 @@
-/* 
-Variables:
-
-Variables are used to store information that we can later reference by recalling the variables name. Anytime you create a variable it creating a memory slot for us to reference.
-
-Math Class Example:
-
-x = 10
-
-x + 5 = ?
-
-*/
-
-// ! Rules of naming variables
-/* 
-- Names can contain letters, numbers, underscores, and dollar signs.
-- Names MUST begin with a letter
-- Names can begin with a dollar sign or underscore (rarely used)
-- Names are case sensitive (shoppingCart and shoppingcart)
-- Reserved words can NOT be used (class, let, const, var)
-
-*/
-
-// ! Casing of Variables
-
-/* 
-camelCase - you will lowercase the first word and then uppercase the first letter of each word after
-- firstName, lastName, stateTaxOwed
-
-PascalCasing - every word of first letter is capitalized
-- used mostly on Classes
-
-SNAKE_CASE - words are all in caps and underscore added to break the words up
-- used for CONSTANTS or general settings
-- DEVELOPER_API_URL
-
-*/
-
-// ! Three ways to declare variables [var, let, const]
+// 3 ways to declare variables [var, let, or const]
+// Javascript ends with a semicolon (however they are optional)
 
 // prettier-ignore
-let     firstName = "Rob"
-//(1)   (2)      (3) (4)
+    var firstName = "Rob";
+//  (1)    (2)   (3) (4)
 
 /* 
-
-1) JS keyword that denotes the creation of a variable.
-2) The name of the variable that the developer will reference in order to use the value that is stored.
-3) Assignment Operator
-4) Initial Value
+1. JS keyword denotes the creation of the variable (var, let, or const)
+2. The name of the variable that the developer will reference in order to use the value that is stored.
+3. Assignment Operator
+4. Initial Value that it gets set to.
 */
 
-console.log("First Name", firstName);
+console.log("firstName", firstName);
 
-// ! Variables are case sensitive
-/* 
-If your code breaks the rest of the code after the break will not execute.
-*/
-// console.log("First Name", firstname);
+// ! JS variables are CASE SENSITIVE
 
-// console.log("Hello World");
+// console.log("firstName", FirstName); // code breaks; casing matters!
 
-// ! Variable Reassignment
-/* 
-- You do NOT need to re-initialize the variable with a let or a var
-- Only the variable name followed by the assignment operator and the value that you want to assign it to is needed.
+// ? Reassignment of a variable
+// No need for a [var, let, or const] because the variable has already been declared.
+// Only the variable name followed by an = allows you to reassign the value.
 
-*/
+// ! Using 'var' and 'let' allow you to reassign, but 'const' does NOT
 
-// ! Important Note: ONLY VAR and LET will allow you to reassign.
+firstName = "Alex";
+console.log("firstName", firstName);
 
-firstName = "Mary";
-console.log("First Name Changed:", firstName);
+//CONST example
 
-// ! Const Example:
+const pi = 3.14;
 
-const stateTax = 0.03;
-// stateTax = 0.04; // We get an error because you can not reassign a const
+// pi = 4.2; // cord breaks since you can't reassign a const variable once it is declared.
 
-// ? 1) Create a variable to store the last name of someone
-// ? 2) Reassign that variable to another last name
-// ? 3) Make sure you console log as you go
+// ? Can you declare a variable without assigning it?
 
-let lastName = "Thompson";
+var lastName;
+console.log("lastName", lastName);
 
-console.log("Last name is:", lastName);
+lastName = "Villanueva";
+console.log("lastName", lastName);
 
-lastName = "Allen";
+// Naming your variables is important. Stay away from single letters.
 
-console.log("last name is now:", lastName);
+// 60 * 60 * 24
+let seconds = 60
+let minutes = 60
+let hours = 24
+let totalSeconds = seconds * minutes * hours
+console.log("totalSeconds", totalSeconds);
 
-// ! When coming up with variable names avoid single letters.
+// ? Create a variable used to store a current temp, console.log the current temp.
 
-const seconds = 60;
-const minutes = 60;
-const hours = 24;
-let totalSeconds = seconds * minutes * hours;
+let currentTemp = "77";
 
-console.log("Total Seconds in a Day:", totalSeconds);
+console.log(currentTemp)

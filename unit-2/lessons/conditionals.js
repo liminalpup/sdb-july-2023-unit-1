@@ -13,7 +13,7 @@ CONDITIONALS:
 
 // ? Create an if statement for the condition using a 24 hour clock if it is before 12pm console log good morning.
 // ! Initial Setup
-let currentHour = 13;
+// let currentHour = 13;
 
 // console.log(currentHour < 12);
 
@@ -23,11 +23,10 @@ let currentHour = 13;
 3 - code block what will be ran if the condition is true
 
 */
-// (1)   (2)
-if (currentHour < 12) {
-  // (3)
-  console.log("good morning");
-}
+
+let currentHour = 6;
+
+console.log();
 
 // ! If Else Statement
 // ? if it is less than 12 console log good morning if it is greater than 12 console log good afternoon.
@@ -79,3 +78,9 @@ if (age < 5) {
 }
 
 console.log(`$${priceOfTicket.toFixed(2)}`);
+
+// ! Ternaries
+
+let number1 = 5;
+
+let isEven = number1 % 2 === 0 ? true : false;

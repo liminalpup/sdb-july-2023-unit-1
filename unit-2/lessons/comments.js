@@ -1,23 +1,18 @@
+// Comments can add readability to your code.
+//  Keyboard shortcuts CTRL + / will comment out line of code.
+
+//  TODO: Will show up in another color and will give you clues on what you need to do. Helps with organization.
+
+// ? Challenge Prompts
+
+// ! Important Comment
+
 /* 
-Comments can add readability to your code
-
-Single line comments you can use the keyboard short cut CTRL + /
-
-Multi Line Comment shift + alt + A
-
+Multi line comment (Alt+Shift+A)
 */
 
-// Comment Example Here of Single Line
-
-// Using Better Comment you can add  ?  or  ! or a TODO at the beginning of the comment for highlighting.
-
-
-// ? Challenge Questions
-
-// TODO : need to add css selector
-
-// ! Important Comment Here
+//  If you want to keep your line of code still present but not be executed you can comment out your line of code.
 
 // prettier-ignore
-// This will not auto style your next line of code.
+// prettier ignore will not pretty up the code that is directly below it.
 
