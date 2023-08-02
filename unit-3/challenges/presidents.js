@@ -46,14 +46,39 @@ const presidents = [
     { first: 'Joseph', last: 'Biden', year: 1942, passed: undefined },
 ];
 
+
+// ? How do I access just John Adams to console.log(first and last name)?
+console.log("J. Adams", presidents[1].first, presidents[1].last);
+// *            string      2nd obj."first" key   2nd obj."last" key
+
+// ? Create a variable called alivePresidents and generate a filtered list to have only alive presidents
+
+let alivePresidents = presidents.filter((president) => president.passed === undefined);
+console.log(alivePresidents)
+
+// ? how many presidents are alive?
+console.log("Alive president count: ", alivePresidents.length);
+
+// ? create an array of dead presidents using the variable passedPresidents
+let passedPresidents = presidents.filter(president => president.passed !== undefined);
+console.log("Dead presidents: ", passedPresidents.length);
+
+// create a forEach loop on passed presidents
+// display first and last name and the age when died. (passed year - year they were first born)
+
+passedPresidents.forEach(passedPresident => {
+    console.log(passedPresident.first, passedPresident.last, passedPresident.passed - [passedPresident.year]
+        );
+});
+
 /* 
     ! Challenge
     * utilize a filter method to create a new array with presidents who were born after the 1900's
     * utilize your new filtered array & use .forEach to print a string interpolated name of the remaining presidents
 */
 
-let bornAfter1900 = presidents.filter(president => president.year > 1900);
+// let bornAfter1900 = presidents.filter(president => president.year > 1900);
 
-console.log(bornAfter1900);
+// console.log(bornAfter1900);
 
-bornAfter1900.forEach(president => console.log(`${president.first} ${president.last}`))
+// bornAfter1900.forEach(president => console.log(`${president.first} ${president.last}`))

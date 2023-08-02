@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Example</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 id = "main-header">My ToDo List</h1>
+    <h3 id = "category">Category Here</h3>
+    <input
+      type="text" id="input-item"
+      placeholder="
+    Enter Item Here..."
+    /><button id="add-item">Add Item</button>
+    <button id="clear">Clear List</button>
+    <p>Click the Add Item Button to add a new item to the list below</p>
+    <h2>Items</h2>
+    <ul id="todo-item-list">
+      <li class = "todo-item">Dishes</li>
+      <li class = "todo-item">Fluff Pillows</li>
+      <li class = "todo-item">Make Bed - Help</li>
+    </ul >
+    <!-- Table for Notes -->
+    <!-- JS goes at the end right before the body tag closes-->
+    <table>
+        <tr>
+            <th>Method</th>
+            <th>Node List, HTML Collection, Element</th>
+            <th>Single or Multiple</th>
+            <th>Loop through it?</th>
+        </tr>
+        <tr>
+            <td>getElementByID()</td>
+            <td>Element</td>
+            <td>Single</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>getElementByClassName()</td>
+            <td>HTML Collection</td>
+            <td>Multiple</td>
+            <td>Yes - but not .forEach()</td>
+        </tr>
+        <tr>
+            <td>QuerySelector()</td>
+            <td>Element</td>
+            <td>Single</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>querySelectorAll()</td>
+            <td>HTML Collection</td>
+            <td>Multiple</td>
+            <td>Yes - to include .forEach()</td>
+        </tr>
+    </table>
+
+
+
+
+
+    <script src="./index.js"></script>
+    <script src="./events.js"></script>
+  </body>
+</html>

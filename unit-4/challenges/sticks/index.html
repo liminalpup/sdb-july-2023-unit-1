@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticks the Game</title>
+    <style>
+      .container {
+        position: relative;
+        height: 500px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+        padding: 25px;
+        gap: 20px;
+        margin-bottom: 40px;
+        background: lightgray;
+        border-radius: 20px;
+      }
+
+      .container > * {
+        width: 400px;
+      }
+
+      button,
+      input {
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sticks The Game</h1>
+      <p>
+        You will start off with 23 sticks in a pile. You can take up to 3 sticks
+        at one time. You are trying to leave the computer with one stick left.
+      </p>
+      <h3>Number of Sticks Left: <span id="sticks-number">23</span></h3>
+      <label for="number"
+        >Enter the Number of Sticks You Would Like to Take</label
+      >
+      <input type="text" name="number" id="player-input"/>
+      <button id="submitBtn">Click to Submit</button>
+      <div id="message">Message here on how many computer took</div>
+    </div>
+  </body>
+</html>
