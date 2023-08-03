@@ -75,10 +75,10 @@ let videoLinkElement = document.createElement("a")
 // });
 
 // *Update the img src, link reference, and textContent
-missionPatchElement.src = launches.links.mission_patch_small;
-videoLinkElement.href = launches.links.video_link;
-missionNameElement.textContent = launches.mission_name;
-missionDetailsElement.textContent = launches.details;
+missionPatchElement.src = launch.links.mission_patch_small;
+videoLinkElement.href = launch.links.video_link;
+missionNameElement.textContent = launch.mission_name;
+missionDetailsElement.textContent = launch.details;
 
 
 //*sick, now build the HTML (append the newly created missionXElement children to the containerElement parent.)
@@ -90,9 +90,12 @@ containerElement.appendChild(videoLinkElement);
 //Display the youtube url as a click able link that says "Click to View on Youtube"
 // *To display a youtube URL as a link, we create the link element 'a' in the document, use .innerHTML for the text between the tags, .href for the link, and .title for the title. Then, append 'videoLinkElement child to containerElement parent.
 }); //*close the forEach with all the variables, elements, textContent changes, and children are within the loop.
-
-} // close the fetchSpaceXLaunchData fx
-clearAll(containerElement);
+}
+ // close the fetchSpaceXLaunchData fx
+function clear() {
+    let parentElement = document.getElementsByClassName("container");
+    parentElement.replaceChildren();
+}
 
 
  //*close the displayLaunchData() fx and run that bih
