@@ -10,7 +10,7 @@ Arrays are objects that have the following characteristics:
 // ? How do we create arrays?
 
 // ### Method 1:
-//use the barackets [] to begin and end the array.
+//use the brackets [] to begin and end the array.
 const names = ["George", "John", "Thomas"]; //<-- Preferred way of creating
 console.log("names", names);
 // ### Method 2:

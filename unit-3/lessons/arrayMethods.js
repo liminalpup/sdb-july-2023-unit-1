@@ -164,8 +164,8 @@ console.log(failing)
     * creates an array with elements resulting from a callback fx
 */
 
-// let statesUpperCase = states.map(state => state.toUpperCase())
-// console.log(statesUpperCase)
+let statesUpperCase = states.map(state => state.toUpperCase())
+console.log(statesUpperCase)
 
 // ! Quick Challenge - raise everyone's grade by 15 points if not above 90.
 
