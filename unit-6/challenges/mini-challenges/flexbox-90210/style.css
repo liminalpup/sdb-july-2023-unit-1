@@ -1,0 +1,29 @@
+
+.box:nth-child(1) {
+    diaplay: flex;
+    order: 4;
+}
+.box:nth-child(2) {
+    order: 2;
+}
+.box:nth-child(3) {
+   order: 1;
+}
+.box:nth-child(4) {
+    order: 5;
+}
+.box:nth-child(5) {
+    order: 3;
+}
+
+/* SETUP DO NOT TOUCH BELOW THIS LINE*/
+.flex-container {
+  display: flex;
+}
+
+.box {
+  background: blue;
+  padding: 40px;
+  outline: 3px solid red;
+  color: white;
+}
